@@ -24,7 +24,7 @@ Fournir aux étudiants CPGE marocains :
 
 - **Frontend** : React + TypeScript + Tailwind CSS
 - **Routing** : React Router
-- **Hébergement** : InfinityFree (via http://urschool.rf.gd)
+- **Hébergement** : ............ (via ...........)
 - **UI** : Composants réutilisables, responsive et accessibles
 
 ---
