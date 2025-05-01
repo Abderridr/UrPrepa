@@ -4,7 +4,7 @@
 
 ## 🌐 Site web
 
-🔗 [UrPrepa](..../ur-prepa.vercel.app)
+🔗 [UrPrepa](http://ur-prepa.vercel.app)
 
 ---
 
