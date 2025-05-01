@@ -31,10 +31,10 @@ const Footer: React.FC = () => {
               <Instagram className="h-6 w-6" />
             </a>
             <a
-              href="mailto:urschool@gmail.com"
+              href="mailto:urschool4@gmail.com"
               className="text-[#093e2a] hover:text-[#1d7046] transition-colors duration-200"
             >
-              Contact: urschool@gmail.com
+              Contact: urschool4@gmail.com
             </a>
           </div>
         </div>
