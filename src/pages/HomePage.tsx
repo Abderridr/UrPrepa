@@ -5,15 +5,15 @@ import TrackButton from '../components/TrackButton';
 const HomePage: React.FC = () => {
   const sliderImages = [
     {
-      src: "http://urschool.rf.gd/assets/img/MPSI.png",
+      src: "https://i.ibb.co/FbQmFqPy/MPSI.png",
       alt: "Bienvenue sur UrPrepa"
     },
     {
-      src: "http://urschool.rf.gd/assets/img/drive.png",
+      src: "https://i.ibb.co/TDKyRVPD/drive.png",
       alt: "Ressources CPGE"
     },
     {
-      src: "http://urschool.rf.gd/assets/img/PCSI.png",
+      src: "https://i.ibb.co/B57g6P9P/PCSI.png",
       alt: "Réussissez vos concours"
     },];
 
