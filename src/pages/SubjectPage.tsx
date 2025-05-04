@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import CollapseSection from '../components/CollapseSection';
 
 interface SubjectPageProps {
@@ -11,6 +11,7 @@ interface SubjectPageProps {
 
 const SubjectPage: React.FC<SubjectPageProps> = ({ title, track, year }) => {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+  const navigate = useNavigate();
 
   const backPath = `/${track}`;
   const isPSI = track === 'psi';
@@ -19,11 +20,6 @@ const SubjectPage: React.FC<SubjectPageProps> = ({ title, track, year }) => {
 
   const toggleCourses = () => {
     setIsCoursesOpen(!isCoursesOpen);
-  };
-
-  const handlePayment = (courseName: string) => {
-    // Placeholder for payment logic
-    alert(`Redirecting to payment gateway for ${courseName}...`);
   };
 
   const paidCourses = [
@@ -265,7 +261,11 @@ const SubjectPage: React.FC<SubjectPageProps> = ({ title, track, year }) => {
                     <div className="flex justify-between items-center">
                       <span className="text-lg font-bold text-[#29bc84]">{course.price}</span>
                       <button
-                        onClick={() => handlePayment(course.name)}
+                        onClick={() =>
+                          navigate('/payment', {
+                            state: { title: course.name, description: course.description, price: course.price },
+                          })
+                        }
                         className="bg-[#29bc84] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#25a973] transition-all"
                       >
                         Acheter
